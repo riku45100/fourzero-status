@@ -1,0 +1,35 @@
+# FourZero Upptime configuration
+owner: riku45100
+repo: fourzero-status
+
+sites:
+  - name: FourZero Website
+    url: https://fourzero.work
+    expectedStatusCodes:
+      - 200
+  - name: FourZero Contact
+    url: https://fourzero.work/contact/
+    expectedStatusCodes:
+      - 200
+  - name: FourZero Services
+    url: https://fourzero.work/services/
+    expectedStatusCodes:
+      - 200
+  - name: WordPress REST API
+    url: https://fourzero.work/wp-json/
+    expectedStatusCodes:
+      - 200
+
+status-website:
+  cname: status.fourzero.work
+  logoUrl: https://fourzero.work/wp-content/uploads/2024/01/cropped-fourzero-logo-192x192.png
+  name: FourZero Status
+  introTitle: "**FourZero Status**"
+  introMessage: "Live service status and uptime monitoring for FourZero."
+  navbar:
+    - title: Status
+      href: /
+    - title: FourZero
+      href: https://fourzero.work
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
