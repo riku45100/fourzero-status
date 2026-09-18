@@ -21,7 +21,6 @@ sites:
       - 200
 
 status-website:
-  cname: status.fourzero.work
   logoUrl: https://fourzero.work/wp-content/uploads/2024/01/cropped-fourzero-logo-192x192.png
   name: FourZero Status
   introTitle: "**FourZero Status**"
