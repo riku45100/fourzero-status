@@ -1,0 +1,45 @@
+name: Static Site CI
+on:
+  push:
+    paths:
+      - ".upptimerc.yml"
+      - "assets/**"
+      - "history/**"
+      - "README.md"
+  schedule:
+    - cron: "0 1 * * *"
+  repository_dispatch:
+    types: [static_site]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.repository }}-upptime-site
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build and deploy site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          token: ${{ github.token }}
+
+      - name: Generate site
+        uses: upptime/uptime-monitor@v1.44.0
+        with:
+          command: "site"
+        env:
+          GH_PAT: ${{ github.token }}
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ github.token }}
+          publish_dir: "site/status-page/__sapper__/export/"
+          user_name: "Upptime Bot"
+          user_email: "73812536+upptime-bot@users.noreply.github.com"
