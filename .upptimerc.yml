@@ -23,6 +23,18 @@ sites:
     url: https://hhuclfjuojbscgoiffic.supabase.co
     expectedStatusCodes:
       - 200
+  - name: Supabase REST API
+    url: https://hhuclfjuojbscgoiffic.supabase.co/rest/v1/
+    expectedStatusCodes:
+      - 200
+  - name: Supabase Auth
+    url: https://hhuclfjuojbscgoiffic.supabase.co/auth/v1/health
+    expectedStatusCodes:
+      - 200
+  - name: Supabase Storage
+    url: https://hhuclfjuojbscgoiffic.supabase.co/storage/v1/status
+    expectedStatusCodes:
+      - 200
 
 status-website:
   baseUrl: /fourzero-status
