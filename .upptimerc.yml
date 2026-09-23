@@ -19,6 +19,10 @@ sites:
     url: https://fourzero.work/wp-json/
     expectedStatusCodes:
       - 200
+  - name: Supabase
+    url: https://hhuclfjuojbscgoiffic.supabase.co
+    expectedStatusCodes:
+      - 200
 
 status-website:
   baseUrl: /fourzero-status
