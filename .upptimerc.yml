@@ -39,6 +39,10 @@ sites:
     url: https://github.com/riku45100/fourzero-status
     expectedStatusCodes:
       - 200
+  - name: FourZero Term Importer GitHub Repository
+    url: https://github.com/riku45100/fourzero-term-importer
+    expectedStatusCodes:
+      - 200
 
 status-website:
   baseUrl: /fourzero-status
