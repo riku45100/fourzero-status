@@ -4,50 +4,50 @@
   --body-text-color: #111111;
   --card-background-color: #ffffff;
   --nav-background-color: #111111;
-  --nav-border-bottom-color: #3b82f6;
+  --nav-border-bottom-color: #211551;
   --nav-text-color: #ffffff;
-  --nav-text-color-hover: #3b82f6;
+  --nav-text-color-hover: #211551;
   --card-border-color: #e5e7eb;
   --card-shadow-color: rgba(17, 17, 17, 0.08);
-  --primary-color: #3b82f6;
-  --primary-color-hover: #2563eb;
+  --primary-color: #211551;
+  --primary-color-hover: #30206f;
   --success-color: #16a34a;
   --error-color: #dc2626;
   --warning-color: #f59e0b;
   --down-color: #dc2626;
   --degraded-color: #f59e0b;
   --up-color: #16a34a;
-  --graph-line-color: #3b82f6;
+  --graph-line-color: #211551;
 }
 
 a {
-  color: #3b82f6;
+  color: #211551;
 }
 
 a:hover {
-  color: #2563eb;
+  color: #30206f;
 }
 
 header,
 nav {
-  border-bottom-color: #3b82f6 !important;
+  border-bottom-color: #211551 !important;
 }
 
 header a:hover,
 nav a:hover {
-  color: #3b82f6 !important;
+  color: #211551 !important;
 }
 
 button,
 .button {
-  background: #3b82f6;
-  border-color: #3b82f6;
+  background: #211551;
+  border-color: #211551;
 }
 
 button:hover,
 .button:hover {
-  background: #2563eb;
-  border-color: #2563eb;
+  background: #30206f;
+  border-color: #30206f;
 }
 
 .status-up,
@@ -66,5 +66,5 @@ button:hover,
 }
 
 footer a {
-  color: #3b82f6;
+  color: #211551;
 }
