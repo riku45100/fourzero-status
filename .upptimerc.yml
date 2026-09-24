@@ -58,3 +58,8 @@ status-website:
       href: https://fourzero.work
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+
+  - name: FourZero Dark Light Mode GitHub Repository
+    url: https://github.com/riku45100/dark-light-mode
+    expectedStatusCodes:
+      - 200
