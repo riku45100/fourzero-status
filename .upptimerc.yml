@@ -43,6 +43,15 @@ sites:
     url: https://github.com/riku45100/fourzero-term-importer
     expectedStatusCodes:
       - 200
+  - name: FourZero Dark Light Mode GitHub Repository
+    url: https://github.com/riku45100/dark-light-mode
+    expectedStatusCodes:
+      - 200
+  - name: FourZero Simple CRM GitHub Repository
+    url: https://github.com/riku45100/simple-crm
+    expectedStatusCodes:
+      - 200
+
 
 status-website:
   baseUrl: /fourzero-status
