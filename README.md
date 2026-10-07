@@ -13,4 +13,4 @@ Checks run every 5 minutes through GitHub Actions.
 
 ## Status page
 
-https://status.fourzero.work
+Coming Soon
